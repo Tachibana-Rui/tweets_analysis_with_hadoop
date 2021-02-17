@@ -16,7 +16,7 @@ def main(separator='\t'):
 	for current_word, group in groupby(data, itemgetter(0)):
 		try:
 			total_count = sum(int(count) for current_word, count in group)
-			print(current_word+separator+total_count)
+			print(current_word+separator+str(total_count))
 		except ValueError:
 			# count was not a number, so silently discard this item
 			pass
@@ -33,5 +33,5 @@ def test(separator='\t'):
 			pass
 
 if __name__ == "__main__":
-#	test()
-	main()
+	test()
+#	main()
