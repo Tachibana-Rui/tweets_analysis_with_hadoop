@@ -1,7 +1,8 @@
+#!/usr/bin python3
+
 import sys
 import json
 import re
-import time
 
 def read_input(file):
 	temp={}

@@ -1,3 +1,5 @@
+#!/usr/bin python3
+
 from itertools import groupby
 from operator import itemgetter
 import sys
